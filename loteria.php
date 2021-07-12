@@ -42,7 +42,7 @@ public $resultado = false;
           }
     }
 
-} //fin class loteria-
+} //fin class loteria
 
 $mostrar = new loteria(10,5);
 $mostrar->solteo();
