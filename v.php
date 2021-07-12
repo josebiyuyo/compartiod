@@ -1,7 +1,11 @@
 <?php 
 
-session_start();
 
+$varcookie =  $_POST['user'];
+//                             duración 1 hora
+setcookie('ncookie','$varcookie',time()+36000);
+
+session_start();
 echo "<center>Bienvenido: ". $_SESSION['user'] . "</center>";
 echo "<center>Locacion actual: " . $_SESSION['region'] ."</center><br>";
 
